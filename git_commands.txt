@@ -1,0 +1,94 @@
+GITHUB:
+1. create git account and login
+2. create a new repo
+	click + symbol and create new repo
+	enter repo name 
+	enter suitable description
+	keep repo public
+	tick on redime file
+	click on create repository
+3.Create PAT ( PERSONAL ACCESS TOKEN )
+	click on profile
+	settings
+	scroll down and click on developer settings
+
+4. Configuration commands ( To link git account to the system we are working )
+
+	git config --global user.name
+	
+	$ git config --global user.email 
+	
+	cred { credential manager } ---- to check whether it is configured or not
+	
+	in search bar -- cmd { deafault directory}
+	
+	CLI { COMMAND LINE INTERFACE }
+	
+	Trainer Repo Link : 
+	https://github.com/Tanuja136/java_dsa      ------------    domain name / user name / repo name
+	
+	To copy the repo of github to folder
+	git clone https://github.com/Tanuja136/java_dsa
+	
+	
+	
+		
+	
+	
+
+SESSION 2 : 
+
+To copy a Repo into our system :
+	$ git clone REPO Link
+	$ git clone 
+	the above command copies the given repo into our computer.The copy of the Repo in the server (github ) called as Remote and 
+
+To push the content into Remote Repo (server) .  that is to copy content from local repo (from computer) to Remote Repo , the commands are
+
+	STEPS : 
+		1 . ask the git to list down all the files that need to be pushed ( upload )
+			$ git add path      ----     to add specific files
+			$ git add .         ----     to add all files at current path { staged means lised }
+			
+		2 . Ask the git to create a secured object in which all the files to be pushed are copied . 
+			$ git commit -m "java dsa notes added"
+			
+		3 . Push {upload }
+			$ git push origin main
+			$ git push { always pushes to main branch  }
+			
+		$ git status
+			
+			
+		Eclipse  
+			To Create a NEW PROJECT :
+			
+			file -> new ->  project ->  java project  -> project name : practice  -> de-select the module.java check box -> finish
+			
+			right click on src folder and create -> new ->  package
+			package name :day1
+			
+			right click on "day1" in explorer { under src } , create -> new -> class 
+			class name "HelloWorld"
+			select public static void main check box
+			sysout --- cntrl +space bar 
+			to run  --- play button / cntrl f
+			
+			
+	Primitive data types :
+		Numeric :
+			number only
+				byte
+				short
+				int 
+				long
+			number with precision/accuracy
+				float
+				byte
+		char
+		boolean - 1 bit
+		
+		Arithmetic operators :
+			+ - * / %
+			hjhjhm
+			
