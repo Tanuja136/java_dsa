@@ -78,17 +78,87 @@ To push the content into Remote Repo (server) .  that is to copy content from lo
 	Primitive data types :
 		Numeric :
 			number only
-				byte
+				byte 
 				short
-				int 
+				int  - 4 BYTE
 				long
 			number with precision/accuracy
 				float
 				byte
-		char
+		char - 2 BYTE
 		boolean - 1 bit
+		
+		
+		
+		
+		
+		
+		
+		DAY 2 : 
 		
 		Arithmetic operators :
 			+ - * / %
-			hjhjhm
 			
+			All the 
+			the arithmetic operators are 
+			java is most type strict language
+			
+			
+			Relational operators : 
+			
+			> < >= <= == !=
+			
+			input - numbers
+			output - boolean
+			used with infix notation
+			less precedence than arithmetic
+			higher precedence than logical
+			
+			imp READABILITY / SIMPLICITY
+			
+			
+			[] - closed brackets
+			() - open
+			[)
+			
+			logical operators :
+				& && | || !
+				
+				& - long
+				&& - shortcut
+				input - boolean
+			output - boolean
+			used with infix notation
+			less precedence than arithmetic and relational
+			higher precedence than assignement
+			
+			
+			post increment and post decrement operatorshave lesser precedence than assignement operator
+			
+			dot operator 
+			object.field
+			
+			the highest priority -------- PARANTHESIS 
+				it is not an operator , but used to overwrite the precedence of an operator
+				
+				
+		JAVA PROGRAM STRUCTURE :
+			
+			c - is a peocedural language ( divide and conquer )
+				maintanence is high when doing modification
+				
+			OOP 
+				we can do modification easily
+				to implent abstraction ( encapsulation )  -   switch on / off
+				to implent polymorphism
+				
+			disadv of c++ :
+				main() must be a global function.
+				global function were allowed, Thus the solutions are made neither procedural or object oriented.
+				global variables are still allowed in c++
+				files are loaded 
+			
+			JAVA : 
+				No global function . all are only mrthods.so you have strict oo solution.
+				no global variables
+				
