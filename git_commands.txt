@@ -161,4 +161,5 @@ To push the content into Remote Repo (server) .  that is to copy content from lo
 			JAVA : 
 				No global function . all are only mrthods.so you have strict oo solution.
 				no global variables
+				memory allocation is done during run time
 				
