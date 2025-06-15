@@ -6,3 +6,10 @@
 6. Advantages of OOPL
 7. Disadvantages of C++
 8. Solutions given by Java to overcome problems of C++
+
+
+
+
+
+
+

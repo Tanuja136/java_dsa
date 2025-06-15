@@ -365,4 +365,40 @@ TAX PROBLEM
 		void - no return type
 		so can we use void in constructor ? 
 			No because we already know it never returns the value , so if we use it is 
+			
+	
+	in static method --------   no "this" references
+				this is used in instance method to call the current values
+				
+	
+	find sum of series
+	find sum of odd digits
+	find sum of even digits
+	find sum of evenly placed digits
+	find sum of odd placed digits
+	find sum of evenly placed odd digits
+	find sum of odd placed even digits
+	
+	
+	
+	23344567
+	Math.log10 --- to get count of digits
+	 count = 8
+	 remainder  = n %10 = 7
+	 123456
+	 
+--------------------------------------------------
+day -4 session -2
+
+Data structure - storing data and also orgainzing it in a memory ( means no gap between them ) wi
+
+array is time efficient Data structure beacause the accessing elements is easy { look up }
+
+
+
+	
+	
+
+
+
 		
