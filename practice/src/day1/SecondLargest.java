@@ -5,27 +5,33 @@ import java.util.Scanner;
 public class SecondLargest {
 
 	private static int inputNumber; //static is used because we need the input of one copy
-	private static int SumOfEvenlyPlaced ;
+	private static int SecondLargeNumber ;
+	private static int FirstLargest ;
 	
-	public static void findSumOfEvenlyPlacedDigits() {
-		int tempNumber = inputNumber ; 
-		int count = (int) Math.log10(tempNumber)+1;
+	public static void findSecondLargestNumber() {
+		FirstLargest = -1;
+		SecondLargeNumber = -1 ;
+		int tempNumber = inputNumber;
 		while(tempNumber > 0) {
-			int RemainderDigit = tempNumber % 10;
+			int RemainderNumber = tempNumber % 10;			
+			if( RemainderNumber > FirstLargest) {
+				SecondLargeNumber = FirstLargest;
+				FirstLargest = RemainderNumber;
+			}
+			else if((RemainderNumber < FirstLargest) && (RemainderNumber > SecondLargeNumber)) {
+				SecondLargeNumber = RemainderNumber;
+			}
 			tempNumber = tempNumber / 10;
-			if( count  % 2 == 0 ) {
-				SumOfEvenlyPlaced += RemainderDigit;
-			}	
-			count--;
 		}
+		
 	}
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		System.out.print("Enter a Number to Calculate Sum of Evenly Placed digits : ");
+		System.out.print("Enter a Number to Calculate Second Largest Number : ");
 		inputNumber = scanner.nextInt();
-		findSumOfEvenlyPlacedDigits();
-		System.out.println("The Sum of Evenly Placed digits " + inputNumber + " is " + SumOfEvenlyPlaced);
+		findSecondLargestNumber();
+		System.out.println("The Second Largest Number of " + inputNumber + " is " + SecondLargeNumber);
 		
 	}
 
