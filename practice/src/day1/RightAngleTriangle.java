@@ -8,7 +8,7 @@ public class RightAngleTriangle {
 	public static void findRightAngleTriangle() {
 		for (int i = 1 ; i <= numberoflines ; i++) {
 			for (int j = 1 ; j <= i ; j++) {
-				System.out.print("* ");
+				System.out.print(j + " ");
 			}
 			System.out.println(" ");
 		}
