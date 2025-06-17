@@ -1,0 +1,104 @@
+17-06-2025
+
+TERNARY OPERATOR : - 
+	?:
+	It is same like conditional stmt , but we write in one line
+	syntax:
+		condition ? true stmt : false stmt
+		
+		
+	Example :
+	
+		package SelfLearn;
+
+		import java.util.Scanner;
+
+public class TernaryOperator {
+
+	public static void main(String[] args) {
+		int number;
+		String result;
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter number to check even or odd : ");
+		number = scanner.nextInt();
+		result = (number % 2 == 0) ? "Even Number" : "Odd number";
+		System.out.println(result);
+		
+	}
+
+}
+----------------------------------------
+
+SWITCH : 
+	Unlike if-then and if-then-else statements, the switch statement can have a number of possible execution paths. 
+	A switch works with the byte, short, char, and int primitive data types.
+	
+	EXAMPLE : -
+	
+	int number = 3 ;
+		switch(number) {
+		case 1:
+			System.out.println("JANUARY");
+		case 2:
+			System.out.println("FEBRUARY");
+		case 3:
+			System.out.println("MARCH");
+		case 4:
+			System.out.println("APRIL");
+		case 5:
+			System.out.println("MAY");
+		}
+		
+	OUTPUT : MARCH
+		     APRIL
+             MAY
+			 
+	In this case i should get only MARCH because i gave number = 3 , but it is printing MARCH and the conditions after the MARCH also . This is because we didnt break the condition.
+	
+	So we have to use BREAK .
+	
+	int number = 3 ;
+		switch(number) {
+		case 1:
+			System.out.println("JANUARY");
+			break;
+		case 2:
+			System.out.println("FEBRUARY");
+			break;
+
+		case 3:
+			System.out.println("MARCH");
+			break;
+
+		case 4:
+			System.out.println("APRIL");
+			break;
+
+		case 5:
+			System.out.println("MAY");
+			break;
+
+		}
+		
+		output : MARCH
+
+	DEFAULT :
+		It is executed if none of condition is true.
+		
+		default:
+			System.out.println("enter a valid number");
+
+---------------------------------------------------------------------------
+LOOPS : - 
+ to repeat something for multiple times we use loops.
+	1. FOR LOOP
+	2. WHILE LOOP
+	3. DO WHILE LOOP 
+	
+-------------------------------------------------------------------------
+
+ARRAYS : 
+	array is a grp of similar data types.
+	
+	int num[] = {1,2,3}
+	int num[] = new int[4];

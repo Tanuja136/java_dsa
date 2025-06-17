@@ -3,6 +3,7 @@ package day1;
 import java.util.Scanner;
 
 public class BoysGirlsProblem {
+	
 	private static int TestCases;
 	private static int numberofstudents;
 	private static String output;
