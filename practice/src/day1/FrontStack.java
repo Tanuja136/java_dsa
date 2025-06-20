@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class PersonStack1 {
+public class FrontStack {
 	private int stackPtr;
 	List <Person> stack;
 	
@@ -14,7 +14,7 @@ public class PersonStack1 {
 	}
 	
 	public void push(Person person) {
-		stack.add(person);
+		stack.add( 0,person);
 		stackPtr++;
 	}
 	
@@ -24,7 +24,7 @@ public class PersonStack1 {
 			return null; // to say that no element of the stack was popped
 		}
 		Person person = stack.get(stackPtr); // copy last ele in list
-		stack.remove(stackPtr); // delete last ele from list
+		stack.remove(0); // delete last ele from list
 		stackPtr--;
 		return person; // return the popped element from the stack
 	}
@@ -36,7 +36,7 @@ public class PersonStack1 {
 		}
 		System.out.printf("%-5s %s", "ID", "NAME");
 		System.out.println("\n------------------");
-		for(int i = stack.size()-1; i >= 0; i--) {
+		for(int i =0 ; i <= stackPtr; i++) {
 			Person person = stack.get(i);
 			int id = person.getId();
 			String name = person.getName();
@@ -47,7 +47,7 @@ public class PersonStack1 {
 	
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		PersonStack1 personStack = new PersonStack1();
+		FrontStack frontStack = new FrontStack();
 		int choice = 0;
 		int numberOfOperations = 10;
 		do {
@@ -58,18 +58,18 @@ public class PersonStack1 {
 			System.out.println("Enter Id and Name of the Person:");
 			int id = scanner.nextInt();
 			String name = scanner.next();
-			personStack.push(new Person(id, name));
+			frontStack.push(new Person(id, name));
 			break;
 		case 2 :
-			Person person = personStack.pop();
+			Person person = frontStack.pop();
 			if(person != null)
 				System.out.println("Popped Person is " + person);
 			break;
 		case 3 :
-			personStack.displayStack();
+			frontStack.displayStack();
 			break;
 		case 4 :
-			personStack.stack = null;
+			frontStack.stack = null;
 			numberOfOperations = 0;
 			break;
 		default:
