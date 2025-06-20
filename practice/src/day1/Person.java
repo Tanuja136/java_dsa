@@ -2,14 +2,14 @@ package day1;
 
 import java.util.Scanner;
 
-class Person {
+class Person1 {
     private int id;
     private String name;
     private char gender;
     private String location;
     private static Person person;
     
-    private Person() {
+    private Person1() {
         System.out.println("Person object is created");
     }
     
