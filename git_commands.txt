@@ -597,8 +597,18 @@ DAY - 8
  = > the number 6174 is known as Kaprekar's Constant, named after the Indian mathematician D.R. Kaprekar
  
  
- Read N
- convert 
+ PROBLEM SOLVING 
+ 
+ 
+ --------------------------------------------------------------
+ DAY - 9 
+ 
+ download mysql
+ 
+ server dbms
+ mysql shell
+ installer
+ 
 
 
 
