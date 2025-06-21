@@ -609,7 +609,259 @@ DAY - 8
  mysql shell
  installer
  
+ 
+ https://app.diagrams.net ----------- to draw any diagrams we have to use this
+ 
 
 
 
+		C:\Program Files\MySQL\MySQL Server 8.0\bin
+		
+		mysql> 
+		insert into people(name,gender,age)values("Anusha","f",21);
+		
+		
+		Excalidraw
+		draw.io
+		
+		
+		FILE - NEW - PROJECT -> MAVEN -> maven project 
+			select -> create a simple project
+			Group id , Artifact id , Name,description( person)  --- Finish
+			
+			
+			expand project folder -- u can see multiple folders 
+			
+			TO CONNECT between java and mysql we need bridging software(mysql connector) and 
+			to connect frontend and backend -- TomCat connector
+			
+			go to eclipse - maven project(named as person above )
+			select pom.xl and open it
+				in that add this tag <dependencies>
+									</dependencies>
+		
+To download mysql connector : --
+			Search
+			https://mvnrepository.com/artifact/mysql/mysql-connector-java
+			Then click on which has less Vulnarability
+			and copy the code and paste it in dependencies tag
+			then ctrl+s
+			then downloaded
+			
+			dao - data access object 
+			service class - abstarction like methods names and full code in dao
+			
+			source - getter - select - set id remove
+			to string
+			
+			java mongoclient -------- dependency tag
+			
+			
+---------------------------------------------------------------------------------------------------------------
+MYSQL : -
+
+
+
+
+Microsoft Windows [Version 10.0.26100.4351]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\learning\java_dsa>mysql -u root -p
+Enter password: **************
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 11
+Server version: 8.0.42 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2025, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> \c
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+4 rows in set (0.03 sec)
+
+mysql> select database();
++------------+
+| database() |
++------------+
+| NULL       |
++------------+
+1 row in set (0.00 sec)
+
+mysql> create database tanuja;
+Query OK, 1 row affected (0.04 sec)
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
+| tanuja             |
++--------------------+
+5 rows in set (0.00 sec)
+
+mysql> use tanuja;
+Database changed
+mysql> show tables;
+Empty set (0.03 sec)
+
+mysql> create table people(id int primary key auto_increment, name varchar(50) not null, location varchar(50), gender varchar(2), age smallint default(0));
+Query OK, 0 rows affected (0.07 sec)
+
+mysql> desc people;
++----------+-------------+------+-----+---------+-------------------+
+| Field    | Type        | Null | Key | Default | Extra             |
++----------+-------------+------+-----+---------+-------------------+
+| id       | int         | NO   | PRI | NULL    | auto_increment    |
+| name     | varchar(50) | NO   |     | NULL    |                   |
+| location | varchar(50) | YES  |     | NULL    |                   |
+| gender   | varchar(2)  | YES  |     | NULL    |                   |
+| age      | smallint    | YES  |     | 0       | DEFAULT_GENERATED |
++----------+-------------+------+-----+---------+-------------------+
+5 rows in set (0.01 sec)
+
+mysql> insert into people(name,location,gender,age)values("Tanuja","Pithapuram","f",21);
+Query OK, 1 row affected (0.04 sec)
+
+mysql> insert into people(name,location,gender,age)values("Parimala","Gollaprolu","f");
+ERROR 1136 (21S01): Column count doesn't match value count at row 1
+mysql> insert into people(name,location,gender)values("Parimala","Gollaprolu","f");
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into people(name,gender,age)values("Anusha","f",21);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into people(name,location,gender,age)values("Chandrika","Rajahmandry","f",22);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into people(name,location,age)values("Aravind","Rajahmandry",22);
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into people(name,location,gender,age)values("Rama","Kuthukuluru","f",20);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into people(name,gender,age)values("Sai","f",21);
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into people(name,location,gender,age)values("Srinija","Viravada","f",22);
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into people(name,location,gender,age)values("Tulasi","Gollaprolu","m",22);
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into people(name,location,gender)values("Nandhini0","Kakinada","f");
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into people(name,location,age)values("Supriya","Thimmapuram",16);
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into people(name,location,gender)values("Lakshmi","Chitrada","f");
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into people(name,location,gender,age)values("Srinu","Chitrada","m",42);
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into people(name,gender,age)values("Prasanna","m",22);
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into people(name,location,gender,age)values("Devi","New York","f",22);
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into people(name,gender,age)values("Sanjana","f",10);
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into people(name,location,gender,age)values("Priya","Virava","f",15);
+Query OK, 1 row affected (0.03 sec)
+
+mysql> select * from people;
++----+-----------+-------------+--------+------+
+| id | name      | location    | gender | age  |
++----+-----------+-------------+--------+------+
+|  1 | Tanuja    | Pithapuram  | f      |   21 |
+|  2 | Parimala  | Gollaprolu  | f      |    0 |
+|  3 | Anusha    | NULL        | f      |   21 |
+|  4 | Chandrika | Rajahmandry | f      |   22 |
+|  5 | Aravind   | Rajahmandry | NULL   |   22 |
+|  6 | Rama      | Kuthukuluru | f      |   20 |
+|  7 | Sai       | NULL        | f      |   21 |
+|  8 | Srinija   | Viravada    | f      |   22 |
+|  9 | Tulasi    | Gollaprolu  | m      |   22 |
+| 10 | Nandhini0 | Kakinada    | f      |    0 |
+| 11 | Supriya   | Thimmapuram | NULL   |   16 |
+| 12 | Lakshmi   | Chitrada    | f      |    0 |
+| 13 | Srinu     | Chitrada    | m      |   42 |
+| 14 | Prasanna  | NULL        | m      |   22 |
+| 15 | Devi      | New York    | f      |   22 |
+| 16 | Sanjana   | NULL        | f      |   10 |
+| 17 | Priya     | Virava      | f      |   15 |
++----+-----------+-------------+--------+------+
+17 rows in set (0.00 sec)
+
+mysql> select * from people;
++----+-----------+-------------+--------+------+
+| id | name      | location    | gender | age  |
++----+-----------+-------------+--------+------+
+|  1 | Tanuja    | Pithapuram  | f      |   21 |
+|  2 | Parimala  | Gollaprolu  | f      |    0 |
+|  3 | Anusha    | NULL        | f      |   21 |
+|  4 | Chandrika | Rajahmandry | f      |   22 |
+|  5 | Aravind   | Rajahmandry | NULL   |   22 |
+|  6 | Rama      | Kuthukuluru | f      |   20 |
+|  7 | Sai       | NULL        | f      |   21 |
+|  8 | Srinija   | Viravada    | f      |   22 |
+|  9 | Tulasi    | Gollaprolu  | m      |   22 |
+| 10 | Nandhini0 | Kakinada    | f      |    0 |
+| 11 | Supriya   | Thimmapuram | NULL   |   16 |
+| 12 | Lakshmi   | Chitrada    | f      |    0 |
+| 13 | Srinu     | Chitrada    | m      |   42 |
+| 14 | Prasanna  | NULL        | m      |   22 |
+| 15 | Devi      | New York    | f      |   22 |
+| 16 | Sanjana   | NULL        | f      |   10 |
+| 17 | Priya     | Virava      | f      |   15 |
+| 18 | Sailaja   | Hyd         | f      |   21 |
++----+-----------+-------------+--------+------+
+18 rows in set (0.00 sec)
+
+mysql> select * from people;
++----+-----------+-------------+--------+------+
+| id | name      | location    | gender | age  |
++----+-----------+-------------+--------+------+
+|  1 | Tanuja    | Pithapuram  | f      |   21 |
+|  2 | Parimala  | Gollaprolu  | f      |    0 |
+|  3 | Anusha    | NULL        | f      |   21 |
+|  4 | Chandrika | Rajahmandry | f      |   22 |
+|  5 | Aravind   | Rajahmandry | NULL   |   22 |
+|  6 | Rama      | Kuthukuluru | f      |   20 |
+|  7 | Sai       | NULL        | f      |   21 |
+|  8 | Srinija   | Viravada    | f      |   22 |
+|  9 | Tulasi    | Gollaprolu  | m      |   22 |
+| 10 | Nandhini0 | Kakinada    | f      |    0 |
+| 11 | Supriya   | Thimmapuram | NULL   |   16 |
+| 12 | Lakshmi   | Chitrada    | f      |    0 |
+| 13 | Srinu     | Chitrada    | m      |   42 |
+| 14 | Prasanna  | Pithapuram  | m      |   22 |
+| 15 | Devi      | New York    | f      |   22 |
+| 16 | Sanjana   | NULL        | f      |   10 |
+| 17 | Priya     | Virava      | f      |   15 |
+| 18 | Sailaja   | Hyd         | f      |   21 |
++----+-----------+-------------+--------+------+
+18 rows in set (0.00 sec)
+
+-------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
 		
