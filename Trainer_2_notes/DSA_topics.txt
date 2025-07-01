@@ -1,0 +1,101 @@
+30-6-2025
+---------------------------------------------------------------------------------------------------------
+excalidraw.com
+
+Radix Sort : -
+
+23 , 5 , 56 , 44 , 120 , 113 , 85 , 8
+
+Maximum value - 120
+so 
+	023 005 056 044 120 113 085 008
+	
+sort based on the 10pow0 then {120} , {023 , 113 } , {044} , {
+
+
+
+function radixsort(arr , N , palce): #pass
+	dict = pairs of each pair is of key : digit , value : arr
+	for e in arr :
+		digit = e / place % 10 
+		if the key 'digit' not in dict:
+			dict[digit] = new arr
+		dict[digit].add(e)
+	#copy nums in dict back to arr
+	i = 0
+	for grouparr in dictValues:
+		for e in grouparr:
+			arr[i] = e
+			i++
+			
+function sort(arr , N):
+	max = maximum(arr , N)
+	iterate place = 1, 10 ,100 < max
+		radixSort(arr , N , place)
+	print(arr , N)
+	
+	
+	
+	size in dynamic array
+	
+-----------------------------------------------------------
+Bucket Sort :- 
+
+function bucketSort:
+	take the number of elements
+	read array
+	group the array acording to the range [ so each bucket is empty / contain element / array of array ]
+	then sort the each bucket
+	
+	function bucketSort(array, k) is
+    buckets ← new array of k empty lists
+    M ← 1 + the maximum key value in the array
+    for i = 0 to length(array) do
+        insert array[i] into buckets[floor(k × array[i] / M)]
+    for i = 0 to k do 
+        nextSort(buckets[i])
+    return the concatenation of buckets[0], ...., buckets[k]
+	
+	 k is the number of buckets to use 
+	 
+	 
+	 7 algorithms 
+	 
+	 Recursive Function : -
+	 
+	 Types:
+		Diect 
+		Indirect
+		Tail Recursion ----- ***
+		
+-----------------------------------------------------------------------------------------------------------------------------
+
+TOWER OF HANOI SOLVER : -
+
+4 disks 
+	abc : b is auxiliary
+	3 disks moved from a -> b
+	1 disk moved from a -> c
+	again 3 disks moved from b -> c
+	 
+	4acb 
+	
+algorithm :
+	function toh(n , a , c , b)
+		if ( n == 1)
+			mov n a -> c
+		toh(n - 1 , a , b , c)
+		mov n a -> com
+		toh(n - 1 , b , c , a)
+		
+		
+------------------------------------------------------------------------------------------------------------------------------
+
+DAY - 12
+
+SUDOKU SOLVER :
+
+ R - 0
+ C - 7
+ i / 3  000 111 222 + 0 -> 000 111 222
+ i % 3  012 012 012 + 6 -> 678 678 678
