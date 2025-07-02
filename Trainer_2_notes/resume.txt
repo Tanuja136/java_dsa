@@ -1,0 +1,453 @@
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.4in,top=0.4in,right=0.4in,bottom=0.4in]{geometry} % Document margins
+\usepackage{hyperref} % Enable clickable links
+
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+\name{TANUJA MALLIPAMU} % Your name
+
+\address{6304812415 \\ Chitrada, Kakinada}
+
+\address{
+\href{mailto:tanujamallipamu@gmail.com}{tanujamallipamu@gmail.com} \\
+\href{https://www.linkedin.com/in/tanuja-mallipamu-111b7b256}{linkedin.com/in/tanuja-mallipamu} \\
+\href{https://github.com/Tanuja136}{github.com/Tanuja136}
+}
+
+\address{
+\href{https://tanujaportfolio.vercel.app}{tanujaportfolio.vercel.app}
+}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf Aditya College of Engineering and Technology} \hfill {2023 - 2026}\\
+\textit{Bachelor of Technology in Electronics and Communication Engineering }
+
+{\bf Aditya Engineering College} \hfill {2020 - 2023}\\
+\textit{Diploma in Electronics and Communication Engineering }
+
+{\bf Sri Adarsha High School} \hfill {2010 - 2020}\\
+\textit{High School }
+%Minor in Linguistics \smallskip \\
+%Member of Eta Kappa Nu \\
+%Member of Upsilon Pi Epsilon \\
+
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% TECHINICAL STRENGTHS	
+%----------------------------------------------------------------------------------------
+\begin{rSection}{TECHNICAL SKILLS}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming Languages :  & Java , Python  \\
+Frontend Technologies:  & HTML , CSS , JavaScript ,Bootstrap , React.js\\
+Data Base :  & MongoDB\\
+Developer Tools :  & Sublime , VS Code , GitHub , MongoDB Compass\\
+Technologies :  & Full Stack Development, React Native\\
+Areas of Interest :  & Web Design and Development, Mobile App Development\\
+
+\end{tabular}\\
+\end{rSection}
+
+\begin{rSection}{PROJECTS}
+
+\textbf{Blood Care  }\hfill {Octobar 2024} \
+ \begin{itemize}
+    \itemsep -3pt {} 
+     \item Created a "Blood Care" platform focused on "Blood Donation" management using React for the front-end and MongoDB for the database.
+    \begin{itemize}
+  \item \textbf{Admin Page:} Manages over \textbf{100+ user and donation records}, streamlining data management.
+  \item \textbf{Registration Page:} Streamlined user sign-up process, reducing manual data entry by {80\%}.
+  \item \textbf{Student Home Page:} Displays user-specific details such as name, roll number, blood group, and contribution history, improving user access and experience across 100+ active users.
+  \item \textbf{Procedure Page:} Guides users through the donation process, increasing donor sign-ups by \textbf{30\%}.
+\end{itemize}
+
+     \item Ensured full responsiveness across all devices, providing an optimal user experience for 100+ users.
+
+     \end{itemize}
+
+    \textbf{Safeguard India | Smart India Hackathon }\hfill {September 2024} \
+ \begin{itemize}
+    \itemsep -3pt {} 
+     \item Contributed the idea for the Safeguard India project focused on disaster management, which was selected up to the college level.
+ \end{itemize}
+ 
+\textbf{Finance Tracker }\hfill {July 2024} \
+ \begin{itemize}
+    \itemsep -3pt {} 
+     \item  Crafted an intuitive front-end interface for the Finance Tracker application, leveraging HTML, CSS, and JavaScript; achieved a {25\%} increase in user interactions, leading to positive feedback from over 50 users.
+    \item Designed 5+ interactive charts to visualize financial data, resulting in a {20\%} improvement in user retention.
+     \end{itemize}
+
+    \textbf{Web and cloud Bootcamp }\hfill {December 2022} \
+ \begin{itemize}
+    \itemsep -3pt {}
+    \item Participated in a hands-on \textbf{BOOTCAMP} during my diploma focused on web development and   cloud technologies.
+     
+    \item Built a fully responsive Gym website as part of a bootcamp project using HTML, CSS, and Bootstrap.Structured the layout to effectively present services, testimonials, and contact information.
+
+ \end{itemize}
+
+
+\end{rSection} 
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+
+\vspace{2mm}
+\begin{rSection}{INTERNSHIPS} 
+\begin{itemize}
+
+
+
+ \item \textbf{FSD with React Native}  \textit{[Technical Hub]} \hfill {Present}
+  \begin{itemize}
+    \item Successfully completed an internship focused on Full Stack Development, building dynamic and scalable web and mobile applications using React and React Native.
+    \item Gained hands-on experience in both frontend and backend technologies, developing seamless, high-performance applications tailored for modern users.
+  \end{itemize}
+
+  
+  \item \textbf{Web Development Intern}  \textit{[CodSoft – Virtual]} \hfill {August 2024 – September 2024}
+  \begin{itemize}
+    \item Completed a 4-week internship focused on front-end web development, contributing to the design and implementation of responsive websites using HTML, CSS, and JavaScript.
+    \item Certified for successfully completing the internship and acquiring hands-on experience in modern web development practices.
+  \end{itemize}
+
+  
+ 
+\end{itemize}
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+\begin{rSection} {ACHIEVEMENTS} 
+\begin{itemize}
+    \item Secured \textbf{1st Prize} in the \textbf{ECE Expo} at the \textbf{Veda Technical Event}, Aditya College of Engineering and Technology. Presented key aspects of Electronics and Communication Engineering (ECE), focusing on \textbf{SENSORS}, their working principles, types, real-world applications, and role in automation and IoT.
+    
+    \item Advanced to the  \textbf{college level} in the \textbf{Smart India Hackathon} (2024) with a project titled  \textbf{"Safeguard India"} aimed at protecting human safety and disaster management.
+\end{itemize}
+\end{rSection}
+
+
+\begin{rSection}{CERTIFICATIONS}
+
+\begin{itemize}
+    \itemsep -3pt {} 
+    \item Earned a credential in \textbf{HTML, CSS} from IT Specialist Certiport.
+    \href{https://drive.google.com/file/d/1_SBzRz92UIB57WXedwAUw5BV2utaJmvM/view?usp=drivesdk/} {View Certificate}
+
+    \item Successfully completed \textbf{Introduction to Networks} course from CISCO.
+    \href{https://www.linkedin.com/posts/tanuja-mallipamu-111b7b256_ccnav7-ceo-networking-activity-7224809090844168193-oXi2?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD8tZd0BpA8BXJP2_L_ns8unM7JgJizmvRY/} {View Certificate}
+
+    \item Accomplished \textbf{JavaScript Essentials 1 and 2} training from CISCO.
+    \href{https://drive.google.com/file/d/1_Ln4_o4OBtpALapGKGhApKrQBorydRt-/view?usp=drivesdk/}{View Certificate}
+
+    \item Completed \textbf{Web Development} program from CodSoft.
+    \href{https://www.linkedin.com/posts/tanuja-mallipamu-111b7b256_codsoft-certificate-activity-7244198436068065282-mU8p?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD8tZd0BpA8BXJP2_L_ns8unM7JgJizmvRY/}{View Certificate}
+
+    \item Achieved a certificate in \textbf{Basics of JavaScript} from HackerRank.
+    \href{https://www.linkedin.com/posts/tanuja-mallipamu-111b7b256_javascriptbasic-activity-7244217948721029121-twuI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD8tZd0BpA8BXJP2_L_ns8unM7JgJizmvRY/}{View Certificate}
+
+    \item Awarded credentials for participating in \textbf{Tata Crucible Campus Quiz 2024} and \textbf{Flipkart GRiD 6.0 - Software Development Track} from Unstop.
+    \href{https://www.linkedin.com/posts/tanuja-mallipamu-111b7b256_tatacrucible-techquiz-flipkartgrid-activity-7242912199034200066-EexZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD8tZd0BpA8BXJP2_L_ns8unM7JgJizmvRY/}{View Certificate}
+
+    \item Earned a \textbf{Professional Certificate in Communication Skills} from \textbf{RITx (edX)}, successfully completing all courses in the program.
+    \href{https://credentials.edx.org/credentials/b1634df58ec74ed3b8b3dc91261fb8ff/}{View Certificate}
+
+\end{itemize}
+
+
+\end{rSection} 
+
+
+
+
+
+
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+core
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.4in,top=0.4in,right=0.4in,bottom=0.4in]{geometry} % Document margins
+\usepackage{hyperref} % Enable clickable links
+
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+\name{TANUJA MALLIPAMU} % Your name
+
+\address{6304812415 \\ Chitrada, Kakinada}
+
+\address{
+\href{mailto:tanujamallipamu@gmail.com}{tanujamallipamu@gmail.com} \\
+\href{https://www.linkedin.com/in/tanuja-mallipamu-111b7b256}{linkedin.com/in/tanuja-mallipamu} \\
+\href{https://github.com/Tanuja136}{github.com/Tanuja136}
+}
+
+\address{
+\href{https://tanujaportfolio.vercel.app}{tanujaportfolio.vercel.app}
+}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf Aditya College of Engineering and Technology} \hfill {2023 - 2026}\\
+\textit{Bachelor of Technology in Electronics and Communication Engineering }
+
+{\bf Aditya Engineering College} \hfill {2020 - 2023}\\
+\textit{Diploma in Electronics and Communication Engineering }
+
+{\bf Sri Adarsha High School} \hfill {2010 - 2020}\\
+\textit{High School }
+%Minor in Linguistics \smallskip \\
+%Member of Eta Kappa Nu \\
+%Member of Upsilon Pi Epsilon \\
+
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% TECHINICAL STRENGTHS	
+%----------------------------------------------------------------------------------------
+\begin{rSection}{TECHNICAL SKILLS}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming Languages :  & Java , Python , Assembly Language (ASM) ,C (basic), C++ (basic) \\
+HDL Languages :  & VHDL \\
+Tools and Software : & Cadence, Vivado , MASM , MATLAB\\
+Frontend Technologies:  & HTML , CSS , JavaScript ,Bootstrap , React.js \\
+Technologies :  &VLSI Design , Full Stack Development, React Native \\
+
+Areas of Interest :  & Embedded Design, PCB Design, Web Development, Mobile App Development \\
+
+\end{tabular}\\
+\end{rSection}
+
+\begin{rSection}{PROJECTS}
+
+
+ 
+\textbf{Wireless Service Robot For Human Kind}\hfill {May 2023} \
+ \begin{itemize}
+    \itemsep -3pt {} 
+     \item  Developed a multifunctional wireless robot capable of being controlled via three modes: Obstacle Avoidance, Voice Control, and Bluetooth Control.
+    \item Integrated sensors and modules for real-time navigation and responsive control mechanisms.
+  \item Focused on enhancing usability and adaptability for various human-assistive applications.
+\end{itemize}
+
+\textbf{Blood Care  }\hfill {Octobar 2024} \
+ \begin{itemize}
+    \itemsep -3pt {} 
+     \item Created a "Blood Care" platform focused on "Blood Donation" management using React for the front-end and MongoDB for the database.
+    \begin{itemize}
+  \item \textbf{Admin Page:} Manages over \textbf{100+ user and donation records}, streamlining data management.
+  \item \textbf{Registration Page:} Streamlined user sign-up process, reducing manual data entry by {80\%}.
+  \item \textbf{Student Home Page:} Displays user-specific details such as name, roll number, blood group, and contribution history, improving user access and experience across 100+ active users.
+  \item \textbf{Procedure Page:} Guides users through the donation process, increasing donor sign-ups by \textbf{30\%}.
+\end{itemize}
+
+     \item Ensured full responsiveness across all devices, providing an optimal user experience for 100+ users.
+
+     \end{itemize}
+
+    \textbf{Safeguard India | Smart India Hackathon }\hfill {September 2024} \
+ \begin{itemize}
+    \itemsep -3pt {} 
+     \item Contributed the idea for the Safeguard India project focused on disaster management, which was selected up to the college level.
+ \end{itemize}
+
+    \textbf{Web and cloud Bootcamp }\hfill {December 2022} \
+ \begin{itemize}
+    \itemsep -3pt {}
+    \item Participated in a hands-on \textbf{BOOTCAMP} during my diploma focused on web development and   cloud technologies.
+     
+    \item Built a fully responsive Gym website as part of a bootcamp project using HTML, CSS, and Bootstrap.Structured the layout to effectively present services, testimonials, and contact information.
+
+ \end{itemize}
+
+
+\end{rSection} 
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+
+\vspace{2mm}
+\begin{rSection}{INTERNSHIPS} 
+\begin{itemize}
+
+
+
+
+
+  \item \textbf{Embedded Systems Intern} \textit{[ SkillDzire ]} \hfill {July 2024 – September 2024}
+\begin{itemize}
+  \item Gained expertise in embedded system applications.
+  \item Worked on microprocessor (8086) and microcontroller (ARM) architectures.
+  \item Investigated real-time embedded system applications.
+\end{itemize}
+
+ \item \textbf{ FSD with React Native}  \textit{[ Technical Hub ]} \hfill {Present}
+  \begin{itemize}
+    \item Successfully completed an internship focused on Full Stack Development, building dynamic and scalable web and mobile applications using React and React Native.
+    \item Gained hands-on experience in both frontend and backend technologies, developing seamless, high-performance applications tailored for modern users.
+  \end{itemize}
+
+  
+ 
+\end{itemize}
+\end{rSection}
+
+\vspace{2mm}
+\begin{rSection}{Workshops} 
+\begin{itemize}
+
+
+\item \textbf{PCB Design Workshop} \textit{[Chathurvedh IT Solutions – Guntur]} \hfill {Oct 30 – Nov 4, 2023}
+\begin{itemize}
+  \item Participated in a hands-on workshop focused on PCB Design fundamentals.
+  \item Gained practical knowledge in designing and understanding printed circuit boards.
+\end{itemize}
+
+
+  
+ 
+\end{itemize}
+\end{rSection}
+%----------------------------------------------------------------------------------------
+\begin{rSection} {ACHIEVEMENTS} 
+\begin{itemize}
+    \item Secured \textbf{1st Prize} in the \textbf{ECE Expo} at the \textbf{Veda Technical Event}, Aditya College of Engineering and Technology. Presented key aspects of Electronics and Communication Engineering (ECE), focusing on \textbf{SENSORS}, their working principles, types, real-world applications, and role in automation and IoT.
+    
+    \item Advanced to the  \textbf{college level} in the \textbf{Smart India Hackathon} (2024) with a project titled  \textbf{"Safeguard India"} aimed at protecting human safety and disaster management.
+\end{itemize}
+\end{rSection}
+
+
+\begin{rSection}{CERTIFICATIONS}
+
+\begin{itemize}
+    \itemsep -3pt {} 
+    \item Earned a credential in \textbf{HTML, CSS} from IT Specialist Certiport.
+    \href{https://drive.google.com/file/d/1_SBzRz92UIB57WXedwAUw5BV2utaJmvM/view?usp=drivesdk/} {View Certificate}
+
+    \item Successfully completed \textbf{Introduction to Networks} course from CISCO.
+    \href{https://www.linkedin.com/posts/tanuja-mallipamu-111b7b256_ccnav7-ceo-networking-activity-7224809090844168193-oXi2?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD8tZd0BpA8BXJP2_L_ns8unM7JgJizmvRY/} {View Certificate}
+
+    \item Accomplished \textbf{JavaScript Essentials 1 and 2} training from CISCO.
+    \href{https://drive.google.com/file/d/1_Ln4_o4OBtpALapGKGhApKrQBorydRt-/view?usp=drivesdk/}{View Certificate}
+
+    \item Completed \textbf{Web Development} program from CodSoft.
+    \href{https://www.linkedin.com/posts/tanuja-mallipamu-111b7b256_codsoft-certificate-activity-7244198436068065282-mU8p?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD8tZd0BpA8BXJP2_L_ns8unM7JgJizmvRY/}{View Certificate}
+
+    \item Achieved a certificate in \textbf{Basics of JavaScript} from HackerRank.
+    \href{https://www.linkedin.com/posts/tanuja-mallipamu-111b7b256_javascriptbasic-activity-7244217948721029121-twuI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD8tZd0BpA8BXJP2_L_ns8unM7JgJizmvRY/}{View Certificate}
+
+    \item Awarded credentials for participating in \textbf{Tata Crucible Campus Quiz 2024} and \textbf{Flipkart GRiD 6.0 - Software Development Track} from Unstop.
+    \href{https://www.linkedin.com/posts/tanuja-mallipamu-111b7b256_tatacrucible-techquiz-flipkartgrid-activity-7242912199034200066-EexZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD8tZd0BpA8BXJP2_L_ns8unM7JgJizmvRY/}{View Certificate}
+
+    \item Earned a \textbf{Professional Certificate in Communication Skills} from \textbf{RITx (edX)}, successfully completing all courses in the program.
+    \href{https://credentials.edx.org/credentials/b1634df58ec74ed3b8b3dc91261fb8ff/}{View Certificate}
+    
+    \item Successfully completed a \textbf{PCB Design Workshop} at Chathurvedh IT Solutions.
+    \href{https://drive.google.com/file/d/1JbD79ar7l3m92h8Cub1Y5qALQ3iJLvHJ/view}{View Certificate}
+
+
+    \item Participated in \textbf{VEDA 2K23 Circuit Debugging} at ACET.
+    \href{https://drive.google.com/file/d/1JiPlh721-P26AourVuXmcKoXkM9pSOXW/view?usp=drivesdk}{View Certificate}
+
+    
+\item Completed an \textbf{Embedded Systems Internship} from SkillDzire.
+    \href{https://drive.google.com/file/d/1JjUhYYM7R99hiKaZ-R8oT4bCk5aIyQdy/view?usp=drivesdk}{View Certificate}
+
+
+
+
+\end{itemize}
+
+
+\end{rSection} 
+
+
+
+
+
+
+
+
+
+\end{document}
