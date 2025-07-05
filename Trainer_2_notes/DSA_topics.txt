@@ -99,3 +99,273 @@ SUDOKU SOLVER :
  C - 7
  i / 3  000 111 222 + 0 -> 000 111 222
  i % 3  012 012 012 + 6 -> 678 678 678
+ 
+ 
+ Q:9
+ PERMUTATIONS
+ 
+ case1 : abc
+	
+	
+-----------------------------------------
+Why HashSet<String> is Used?
+
+To avoid duplicate permutations, especially when input contains repeated characters.
+Example: 'aab' → 'a' appears twice → can generate the same string more than once.
+
+import java.util.*;
+
+public class Main{
+    
+    public static void genPermutaions(String inputStr, String s, HashSet<String> hashSet){
+        if(inputStr.isEmpty()){
+            hashSet.add(s);
+            return;
+            
+        }
+        for(int i = 0; i < inputStr.length(); i++){
+            char ch = inputStr.charAt(i);
+            String newStr = inputStr.substring(0,i) + inputStr.substring(i+1);
+            genPermutaions(newStr, s+ch, hashSet);
+        }
+    } 
+    public static void main(String[] args){
+        HashSet<String> hashSet = new HashSet<>();
+        Scanner scanner = new Scanner(System.in);
+        String inputStr = scanner.next();
+        String s = "";
+        genPermutaions(inputStr, s, hashSet);
+        ArrayList<String> list = new ArrayList<>(hashSet);
+        Collections.sort(list);
+        for(String ss : list){
+            System.out.println(ss);
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------\\\
+
+GRAPHS :
+
+	Non linear DS.
+	adjansecey matrix :
+		Input:
+3 3
+0 1
+1 2
+2 0
+0 2
+Output:
+Yes
+--------------------------------------------------------------
+
+DAY - 13
+
+HEAPS : -
+
+
+
+
+
+---------------------------------
+DAY - 15
+
+
+HASH SET AND HASH MAP : - 
+
+
+HashSet - insertion order
+TreeSet - Sort order
+
+
+javap java.util.HashSet;
+javap java.util.HashMap;
+
+getters setters equals hashcode
+
+
+HashTable / HashMap :
+	stores key value pairs
+	
+	
+HashSet :
+	stores keys ( unique elements )
+	
+	
+---------------
+Rough :
+
+ 1 2 3 4 5
+ 5
+ 
+ 1:0 , 2:1 , 
+ 2:1 --- 2 is index of 3 and 1 is the index of 2
+ 
+ 
+ 8347512
+
+3+4+5+2 -- 14
+
+-----------------
+-------------------------------------------------------------------------------------------------
+
+DAY - 16
+
+Dynamic programming 
+
+	1 . overlapping subproblems
+	2 . optimal substructure
+	
+	how dynamic programming works ..?
+		- Memorization ( Top - down approach )
+		- Tabulation ( Bottom - up approach )
+		
+problem : climbing stairs : 
+
+1    2    3      4     5 
+
+
+1 - 1
+2 - 2 , 
+	1+1
+3 - 1+2 , 
+	2+1 , 1+1+1
+4 , 2+2 , 1+
+
+1 : 1
+2 : 2
+3 : 3
+4 : 5
+5 : 8
+6 : 13
+like fibonacci series
+
+for example : -
+
+##RECURSIVE APPROACH
+->fib(5) 
+	-> fib(4)
+		-> fib(3)
+			->fib(2)
+			+
+			-> fib(1)
+		+
+		-> fib(2)
+	+
+	-> fib(3)
+	
+	In above approach we recalculates the same value many times.
+	
+## DP WITH Memorization
+
+-> In this case , if already solved then take from memory , if not then calculate and return in memory.
+
+##DP WITH Tabulation
+
+-> 
+
+WHEN TO USE DP :
+	-> shortest path , knapsack , coin change
+	
+	
+0 1 1 2 3 5 8 13 21
+
+------------
+10 9 2 5 3 7
+
+
+d[i].size()
+
+if(l
+
+
+6
+10 9 2 5 3 7
+
+i                prev            j        
+
+0
+1
+2
+3
+4
+5
+
+---------------------------------------------------------------------
+coins 
+1 2 5
+
+amount 
+
+1 : 1
+2 : 2 | 1
+3 : 2 1 | 2
+4 : 2 2 | 2
+5 : 5 | 1
+6 : 5 1 | 2
+
+dp[i-1] + dp[1]
+
+
+dp
+0 : 0
+1 : 1
+2 : 1
+3 : 2
+4 : 2
+5
+  4 , 3 , 0 ---> [2+1] , [2+1] , [0+1] ------> min = 1
+  
+6
+	6-1 6-2 6-5
+	5 4 1 ------> [1+1] , [2+1] , [1+1] -----> min = 2
+	
+7 
+	6 5 2 ------> [2+1] , [1+1] , [1+1] - min = 2
+
+8 : 3
+9 : 3
+10: 2
+11: 3
+---------------------------------------------------------------
+GREEDY TECHNIQUE :
+
+11 - target
+coins - 1 2 5
+
+sort the coins - 5 2 1 
+target - coin 
+11-5 = 6-5 = 1-1       [3]
+
+10 - target
+10-5 = 5-5             [2]
+
+9 - target
+9-5 = 4-2 = 2-2        [3]
+
+8 - target
+8-5 = 3-2 = 1-1        [3]
+
+7 - target
+7-5 = 2-2              [2]
+
+6 - target
+6-5 = 1-1              [2]
+-----------------------------------------
+  0 1 2 - c
+
+0 2 3 4
+1 5 6 7
+2 8 9 2
+-
+r
+
+primary diagonal   - 2 6 2   ----> 2 , 2 are prime ---- 4 [i == j ]
+secondary diagonal - 4 6 8 ------> [0,2 ; 1,1 ; 2,0 ] --> 2 [n-1]
