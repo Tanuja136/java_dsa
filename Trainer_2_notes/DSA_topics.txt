@@ -369,3 +369,97 @@ r
 
 primary diagonal   - 2 6 2   ----> 2 , 2 are prime ---- 4 [i == j ]
 secondary diagonal - 4 6 8 ------> [0,2 ; 1,1 ; 2,0 ] --> 2 [n-1]
+----------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+DAY - 17
+
+DP WITH BINARY TREE GRAPH
+
+----------------------------------------------------------------------------------
+--------------------------------------------------------------
+day - 18 
+
+hello tanu Hello
+
+[ "hello" , "tanu" , "hello" ] -- lowercase and split
+set - 
+ duplicates are removed
+ 
+ 
+              1 2 3 4 5  j    
+          i 1 * * * * *
+            2 *       *
+            3 * * * * *
+			
+			
+			
+			
+			
+==========================================================================================
+==========================================================================================
+day - 19 
+
+AVL Tree Notes (Detailed)
+
+    1. Definition:
+        - An AVL tree is a self-balancing binary search tree (BST).
+        - Named after inventors Adelson-Velsky and Landis.
+        - For every node, the heights of the left and right subtrees differ by at most 1.
+
+    2. Properties:
+        - Balance Factor (BF) = height(left subtree) - height(right subtree)
+        - For every node: BF ∈ {-1, 0, 1}
+        - Ensures O(log n) time complexity for search, insert, and delete.
+
+    3. Rotations:
+        - Used to restore balance after insertions or deletions.
+        - Four types:
+        a) Left Rotation (LL)
+        b) Right Rotation (RR)
+        c) Left-Right Rotation (LR)
+        d) Right-Left Rotation (RL)
+
+    4. Insertion:
+        - Insert as in BST.
+        - Update heights and balance factors.
+        - If imbalance occurs, perform appropriate rotation(s).
+
+    5. Deletion:
+        - Delete as in BST.
+        - Update heights and balance factors.
+        - If imbalance occurs, perform appropriate rotation(s).
+
+    6. Rotations Explained:
+        - LL Rotation: Right rotation on unbalanced node.
+        - RR Rotation: Left rotation on unbalanced node.
+        - LR Rotation: Left rotation on left child, then right rotation on unbalanced node.
+        - RL Rotation: Right rotation on right child, then left rotation on unbalanced node.
+
+    7. Complexity:
+        - Search: O(log n)
+        - Insert: O(log n)
+        - Delete: O(log n)
+
+    8. Applications:
+        - Databases, file systems, memory management, and any application requiring ordered data with fast lookups.
+
+    9. Advantages:
+        - Maintains strict balance, guaranteeing logarithmic height.
+        - Faster lookups compared to unbalanced BSTs.
+
+    10. Disadvantages:
+        - More rotations and bookkeeping compared to other BSTs (e.g., Red-Black Trees).
+        - Slightly more complex implementation.
+
+    References:
+    - "Introduction to Algorithms" by Cormen et al.
+    - Wikipedia: https://en.wikipedia.org/wiki/AVL_tree
+
+AVL Tree - Operations
+    AVL - Left Rotate Steps:
+        1. Identify the node (x) to perform left rotation on.
+        2. Let y = x.right (the right child of x).
+        3. Set x.right = y.left.
+        4. Set y.left = x.
+        5. Update heights of x and y.
+        6. Return y (the new root of the rotated subtree).
