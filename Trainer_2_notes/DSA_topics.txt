@@ -10,7 +10,7 @@ Maximum value - 120
 so 
 	023 005 056 044 120 113 085 008
 	
-sort based on the 10pow0 then {120} , {023 , 113 } , {044} , {
+sort based on the 10^0 then {120} , {023 , 113 } , {044} , {
 
 
 
@@ -64,7 +64,7 @@ function bucketSort:
 	 Recursive Function : -
 	 
 	 Types:
-		Diect 
+		Direct 
 		Indirect
 		Tail Recursion ----- ***
 		
@@ -463,3 +463,83 @@ AVL Tree - Operations
         4. Set y.left = x.
         5. Update heights of x and y.
         6. Return y (the new root of the rotated subtree).
+		
+
+
+		
+==========================================================================================
+==========================================================================================
+day - 20
+
+DIJKSHTRA algorithm
+
+
+rough : 
+59 
+	s = 14
+	p = 45
+	n = 14 + 45 = 59
+
+		
+==========================================================================================
+==========================================================================================
+DAY - 21
+
+KMP Algorithm : = 
+
+
+Longest Prefix Suffix (LPS) Algorithm
+
+Overview
+This program implements the Longest Prefix Suffix (LPS) algorithm, which finds the length of the longest proper prefix of a string that is also a suffix of the same string.
+
+Algorithm Explanation
+
+What is LPS?
+Prefix: A substring that starts from the beginning of the string
+Suffix: A substring that ends at the end of the string
+Proper Prefix/Suffix: A prefix/suffix that is not equal to the entire string
+LPS: The length of the longest prefix that is also a suffix
+
+
+Example
+
+=> For string "abcab":
+
+Prefixes: "a", "ab", "abc", "abca"
+Suffixes: "b", "ab", "cab", "bcab"
+Common: "ab" (length 2)
+LPS = 2
+
+=> For string "ababaca" (indices 0,1,2,3,4,5,6):
+
+String:  a b a b a c a
+Index:   0 1 2 3 4 5 6
+
+===================================================================================================
+===================================================================================================
+
+DAY  - 22
+
+SEGMENT TREE
+
+Sample Input:
+5 5
+1 2 3 4 5
+2 1 3       -> 9
+1 2 10      -> 1 2 10 4 5
+2 1 3       -> 16
+1 4 -2      -> 1 2 10 4 -2
+2 3 4       -> 1
+
+FENWICK TREE
+
+5 5
+1 2 3 4 5
+2 3          -> 1+2+3 = 6
+1 2 10       -> 1 10 3 4 5
+2 3          -> 1+10+3 = 14
+2 5          -> 1+10+3+4+5 = 23
+1 5 7        -> 1 10 3 4 7
+
+
